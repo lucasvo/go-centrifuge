@@ -1142,6 +1142,14 @@
   revision = "0e6baecebbf8a24a6590d3fc8232165008d6e5d8"
 
 [[projects]]
+  branch = "master"
+  digest = "1:acfa36cfa51c20919c1c2798d670808e332780672ee2c7788dc46768968bfc02"
+  name = "github.com/sbinet/go-python"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ddccf6692cfa93817bbb8680547c7d7d9a414091"
+
+[[projects]]
   digest = "1:d917313f309bda80d27274d53985bc65651f81a5b66b820749ac7f8ef061fd04"
   name = "github.com/sergi/go-diff"
   packages = ["diffmatchpatch"]
@@ -1674,6 +1682,7 @@
     "github.com/roboll/go-vendorinstall",
     "github.com/satori/go.uuid",
     "github.com/savaki/jq",
+    "github.com/sbinet/go-python",
     "github.com/shopspring/decimal",
     "github.com/spf13/cast",
     "github.com/spf13/cobra",
