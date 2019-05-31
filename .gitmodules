@@ -1,4 +1,4 @@
 [submodule "snarks/pycrypto"]
 	path = snarks/pycrypto
-	url = https://github.com/Zokrates/pycrypto/
+	url = https://github.com/Zokrates/pycrypto.git
 	branch = add-pedersen

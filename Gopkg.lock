@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:10bd6aba2533f3ad28cd32c54df8bab902ea9b3f930fba0d92666ade58f75cfa"
+  name = "github.com/DataDog/go-python3"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "0b25cc550560f4b3e49c89af907f7cfeffe94dac"
+  version = "0.1.1"
+
+[[projects]]
   digest = "1:55388fd080150b9a072912f97b1f5891eb0b50df43401f8b75fb4273d3fec9fc"
   name = "github.com/Masterminds/semver"
   packages = ["."]
@@ -1142,14 +1150,6 @@
   revision = "0e6baecebbf8a24a6590d3fc8232165008d6e5d8"
 
 [[projects]]
-  branch = "master"
-  digest = "1:acfa36cfa51c20919c1c2798d670808e332780672ee2c7788dc46768968bfc02"
-  name = "github.com/sbinet/go-python"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "ddccf6692cfa93817bbb8680547c7d7d9a414091"
-
-[[projects]]
   digest = "1:d917313f309bda80d27274d53985bc65651f81a5b66b820749ac7f8ef061fd04"
   name = "github.com/sergi/go-diff"
   packages = ["diffmatchpatch"]
@@ -1617,6 +1617,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/DataDog/go-python3",
     "github.com/Masterminds/semver",
     "github.com/centrifuge/centrifuge-ethereum-contracts",
     "github.com/centrifuge/centrifuge-protobufs/documenttypes",
@@ -1682,7 +1683,6 @@
     "github.com/roboll/go-vendorinstall",
     "github.com/satori/go.uuid",
     "github.com/savaki/jq",
-    "github.com/sbinet/go-python",
     "github.com/shopspring/decimal",
     "github.com/spf13/cast",
     "github.com/spf13/cobra",
