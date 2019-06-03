@@ -6,7 +6,7 @@ OUT=out/
 
 PYCRYPTO="python3 pycrypto/cli.py" 
 
-BUYER1="0000000000000000001"
+BUYER1=$(printf "%040d" 1)
 BUYER1_KEY=$($PYCRYPTO keygen)
 BUYER1_PUB=$(echo $BUYER1_KEY | cut -d' ' -f2)
 BUYER1_PRIV=$(echo $BUYER1_KEY | cut -d' ' -f1)
@@ -14,21 +14,21 @@ BUYER1_RATING="64" # 100 in decimal
 BUYER1_LEAF="$BUYER1$BUYER1_PUB$BUYER_RATING"
 BUYER1_HASH=$(echo -n $BUYER1_LEAF | xxd -r -p | sha256sum | cut -d' ' -f1)
 
-BUYER2="000000000000000000002"
+BUYER2=$(printf "%040d" 2) 
 BUYER2_KEY=$($PYCRYPTO keygen)
 BUYER2_PUB=$(echo $BUYER2_KEY | cut -d' ' -f2)
 BUYER2_PRIV=$(echo $BUYER2_KEY | cut -d' ' -f1)
 BUYER2_RATING="0a" # 10 in decimal
 BUYER2_HASH=$(echo -n "$BUYER2$BUYER2_PUB$BUYER_RATING" | xxd -r -p | sha256sum | cut -d' ' -f1)
 
-BUYER3="000000000000000000003"
+BUYER3=$(printf "%040d" 3) 
 BUYER3_KEY=$($PYCRYPTO keygen)
 BUYER3_PUB=$(echo $BUYER3_KEY | cut -d' ' -f2)
 BUYER3_PRIV=$(echo $BUYER3_KEY | cut -d' ' -f1)
 BUYER3_RATING="0a" # 10 in decimal
 BUYER3_HASH=$(echo -n "$BUYER3$BUYER3_PUB$BUYER_RATING" | xxd -r -p | sha256sum | cut -d' ' -f1)
 
-BUYER4="000000000000000000004"
+BUYER4=$(printf "%040d" 4) 
 BUYER4_KEY=$($PYCRYPTO keygen)
 BUYER4_PUB=$(echo $BUYER4_KEY | cut -d' ' -f2)
 BUYER4_PRIV=$(echo $BUYER4_KEY | cut -d' ' -f1)
