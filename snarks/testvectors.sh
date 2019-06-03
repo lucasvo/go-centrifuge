@@ -94,6 +94,7 @@ cat > "$OUT/proof_data.json" << EOF
             "value": "$DOC_INVOICE_AMOUNT",
             "salt": "$DOC_INVOICE_AMOUNT_SALT",
             "property": "$DOC_INVOICE_AMOUNT_PROPERTY"
+        },
         "document_invoice_buyer_proof": {
             "hashes": ["$ODC_INVOICE_AMOUNT_HASH", "$DOC_NODE2", "$DOC_NODE5"],
             "right": [true, false, false],
