@@ -4,7 +4,7 @@ set -ex
 
 OUT=out/
 
-PYCRYPTO="python3 cli.py" 
+PYCRYPTO="python3 pycrypto/cli.py" 
 
 BUYER1=$(printf "%040d" 1)
 BUYER1_KEY=$($PYCRYPTO keygen)
